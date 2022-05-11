@@ -1,8 +1,10 @@
+/*====  VARIABLES ============================ */
 :root {
   --body-bg-color: #FAF7FD;
   --purple: #BB99DD;
 }
 
+/*====  RESET ============================ */
 * {
   margin: 0;
   padding: 0;
@@ -15,15 +17,21 @@
 .icon-github{
   color: var(--purple);
 }
-
+/*===  BASE ============================ */
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-}
+  display: inline-block;
 
+  transition: 0.3s;
+  color: var(--purple);
+}
+a:hover{
+  transform: translateY(-2px);
+}
 img {
   width: 100%;
   height: auto;
@@ -40,8 +48,9 @@ body {
   background: var(--body-bg-color);
   -webkit-font-smoothing: antialiased;
 }
+/*====  LAYOUT ============================ */
 body{
-  display: grid;
+display: grid;
   justify-content: space-around;
   width: 100%;
 }
@@ -62,11 +71,11 @@ ul{
   flex-direction: column;
   text-transform: uppercase;
 }
-
 .container {
   border: var(--purple) 0.125rem solid;
   text-align: center;
   margin-bottom: 1rem;
+  font: 600 1rem 'Poppins', sans-serif;
 }
 
 footer{
